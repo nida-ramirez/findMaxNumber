@@ -1,0 +1,15 @@
+function findMaxNumber(numbers: number[]): number {
+    let maxNumber = numbers[0];
+
+    for (let i = 1; i < numbers.length; i++) {
+        if (numbers[i] > maxNumber) {
+            maxNumber = numbers[i];
+        }
+    }
+
+    return maxNumber;
+}
+
+const numbers = [7, 2, 9, 1, 5];
+const maxNumber = findMaxNumber(numbers);
+console.log(`Наибольшее число в массиве: ${maxNumber}`);
